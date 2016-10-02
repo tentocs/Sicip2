@@ -1,0 +1,113 @@
+ <!-- link -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- /link -->
+
+ <!-- menu -->
+<div id="myMenuPlegable" class="menu-plegable">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="menu-sicip">
+
+<!-- barra -->
+ <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper grey lighten-3">
+    <span id="icono-menu" style="font-size:30px;cursor:pointer; color:#1a237e; margin-left: 30px" onclick="openNav()">&#9776;</span>
+      <a href="#" class="brand-logo"><img class="responsive-img logo1" src="<%= asset_path 'logo4-5.png' %>"></a>
+      <div id="btn-perfil" class="popup right usuario" onclick="myFunction()"><img class="responsive-img circle" src="<%= asset_path 'user.png' %>">
+      <!-- Perfil pequeño -->
+        <span class="popuptext" id="myPopup">
+        <div>
+          <img class="responsive-img circle center " src="<%= asset_path 'user.png' %>">
+          <h6><b class="letra-perfil">Administrador</b></h6>
+          <h6 class="letra-perfil">Ing. Luis Perez</h6>
+          <div class="divider"></div>
+        </div>
+        </span>
+      <!-- Perfil pequeño -->
+     </div>
+     </div>
+  </nav>
+</div>   
+<!-- /barra -->  
+  
+<!-- body -->  
+<div>
+  <div class="margen-body">
+    <p class="letra-barra">Panel de Control</p>
+  </div>
+    <div class="box valign-wrapper center-xs" style="margin-top: 40px">
+      <!-- Seccion Gestion de Proyecto -->  
+      <div class="card-1">
+        <img class="img-1" src="<%= asset_path 'proyecto.png' %>" alt="Avatar" style="width:40%">
+         <div class="container-1">
+           <h4><b>Gestion de Proyecto</b></h4> 
+         </div>
+      </div>
+      <!-- /Seccion Gestion de Proyecto -->  
+
+      <!-- Seccion Gestion de Evaluacion --> 
+      <div class="card-1">
+        <img class="img-1" src="<%= asset_path 'evaluacion.png' %>" alt="Avatar" style="width:40%">
+         <div class="container-1">
+           <h4><b>Gestion de Evaluacion</b></h4> 
+         </div>
+      </div>
+      <!-- /Seccion Gestion de Evaluacion --> 
+      </div>
+</div>
+<!-- /body -->  
+
+</div>
+<!-- /menu -->
+
+<!-- footer -->
+  <footer class="page-footer indigo darken-4">
+         <div class="footer-copyright indigo darken-3">
+            <div class="container center center-on-small-only">
+           2016 Contento, Hern&aacutendez, Mart&iacutenez, Torres
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+            
+<!-- /footer -->
+
+<script>
+$('#mostrar-nav').on('click',function(){ //menu
+$('#nav-menu').toggleClass('mostrar');}) //menu
+$(document).ready(function(){
+   $("#perfil_pequenno").hide();}); //ocultar perfil
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#perfil_pequenno").toggle();}); // hide y show perfil
+});
+function openNav() {
+    document.getElementById("myMenuPlegable").style.width = "250px";
+    document.getElementById("menu-sicip").style.marginLeft = "250px";
+    document.getElementById("btn-perfil").style.marginRight = "290px";
+   $(document).ready(function(){
+   $("#icono-menu").hide();});
+
+}
+
+function closeNav() {
+    document.getElementById("myMenuPlegable").style.width = "0";
+    document.getElementById("menu-sicip").style.marginLeft= "0";
+    document.getElementById("btn-perfil").style.marginRight = "40px";
+    $(document).ready(function(){
+   $("#icono-menu").show();});
+}
+
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+</script>
+ 
+

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  responsible: MyString
+  co_respondible: MyString
+  title: MyString
+  category: one
+  deanery: MyString
+  investigation_area: one
+  investigation_line: MyString
+  research_unit: one
+  duration: 1
+  academic_information: MyString
+  administrative_information: MyString
+  state: one
+  approval_date: 2016-09-12
+  registration_date: 2016-09-12
+
+two:
+  responsible: MyString
+  co_respondible: MyString
+  title: MyString
+  category: two
+  deanery: MyString
+  investigation_area: two
+  investigation_line: MyString
+  research_unit: two
+  duration: 1
+  academic_information: MyString
+  administrative_information: MyString
+  state: two
+  approval_date: 2016-09-12
+  registration_date: 2016-09-12

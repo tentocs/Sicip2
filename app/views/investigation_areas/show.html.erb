@@ -1,0 +1,20 @@
+
+<p id="notice"><%= notice %></p>
+<h1 class = "center-align indigo-text darken-3-text container">Área de Investigación</h1>
+
+<h3 class="white-text container">
+<a  class="  btn-floating btn-large waves-effect waves-light blue-grey lighten-2"  style="left: 750px">
+      <i id="icono" class="large material-icons container" src="get /investigation_areas/1/edit">mode_edit</i>
+    </a>
+ 
+</h3>
+<div class="container center-align col s12 m6 grey lighten-4">
+<p>
+<h5>
+  <strong>Descripción:</strong>
+  <%= @investigation_area.description %>
+</h5></p>
+
+<!--%= link_to "Editar", edit_investigation_area_path(@investigation_area) %>|-->
+<%= link_to 'Regresar', investigation_areas_path %>
+</div>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Investigator:</strong>
+  <%= @investigation_project.investigator %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @investigation_project.project %>
+</p>
+
+<p>
+  <strong>Investigator type:</strong>
+  <%= @investigation_project.investigator_type %>
+</p>
+
+<%= link_to 'Edit', edit_investigation_project_path(@investigation_project) %> |
+<%= link_to 'Back', investigation_projects_path %>

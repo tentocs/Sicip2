@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @activity_pending.project %>
+</p>
+
+<p>
+  <strong>Report1:</strong>
+  <%= @activity_pending.report1 %>
+</p>
+
+<p>
+  <strong>Report2:</strong>
+  <%= @activity_pending.report2 %>
+</p>
+
+<p>
+  <strong>Report3:</strong>
+  <%= @activity_pending.report3 %>
+</p>
+
+<p>
+  <strong>Final report:</strong>
+  <%= @activity_pending.final_report %>
+</p>
+
+<%= link_to 'Edit', edit_activity_pending_path(@activity_pending) %> |
+<%= link_to 'Back', activity_pendings_path %>

@@ -1,0 +1,87 @@
+<%= form_for(project) do |f| %>
+  <% if project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :responsible %>
+    <%= f.text_field :responsible %>
+  </div>
+
+  <div class="field">
+    <%= f.label :co_respondible %>
+    <%= f.text_field :co_respondible %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.text_field :category_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :deanery %>
+    <%= f.text_field :deanery %>
+  </div>
+
+  <div class="field">
+    <%= f.label :investigation_area_id %>
+    <%= f.text_field :investigation_area_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :investigation_line %>
+    <%= f.text_field :investigation_line %>
+  </div>
+
+  <div class="field">
+    <%= f.label :research_unit_id %>
+    <%= f.text_field :research_unit_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :duration %>
+    <%= f.number_field :duration %>
+  </div>
+
+  <div class="field">
+    <%= f.label :academic_information %>
+    <%= f.text_field :academic_information %>
+  </div>
+
+  <div class="field">
+    <%= f.label :administrative_information %>
+    <%= f.text_field :administrative_information %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state_id %>
+    <%= f.text_field :state_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :approval_date %>
+    <%= f.date_select :approval_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :registration_date %>
+    <%= f.date_select :registration_date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

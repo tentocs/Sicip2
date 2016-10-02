@@ -1,0 +1,1 @@
+json.array! @investigation_areas, partial: 'investigation_areas/investigation_area', as: :investigation_area

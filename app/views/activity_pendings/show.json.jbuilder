@@ -1,0 +1,1 @@
+json.partial! "activity_pendings/activity_pending", activity_pending: @activity_pending

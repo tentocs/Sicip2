@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Projects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Responsible</th>
+      <th>Co respondible</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Deanery</th>
+      <th>Investigation area</th>
+      <th>Investigation line</th>
+      <th>Research unit</th>
+      <th>Duration</th>
+      <th>Academic information</th>
+      <th>Administrative information</th>
+      <th>State</th>
+      <th>Approval date</th>
+      <th>Registration date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.responsible %></td>
+        <td><%= project.co_respondible %></td>
+        <td><%= project.title %></td>
+        <td><%= project.category %></td>
+        <td><%= project.deanery %></td>
+        <td><%= project.investigation_area %></td>
+        <td><%= project.investigation_line %></td>
+        <td><%= project.research_unit %></td>
+        <td><%= project.duration %></td>
+        <td><%= project.academic_information %></td>
+        <td><%= project.administrative_information %></td>
+        <td><%= project.state %></td>
+        <td><%= project.approval_date %></td>
+        <td><%= project.registration_date %></td>
+        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_project_path %>

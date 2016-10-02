@@ -1,0 +1,72 @@
+<%= form_for(coordinator) do |f| %>
+  <% if coordinator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coordinator.errors.count, "error") %> prohibited this coordinator from being saved:</h2>
+
+      <ul>
+      <% coordinator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ci %>
+    <%= f.text_field :ci %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :department %>
+    <%= f.text_field :department %>
+  </div>
+
+  <div class="field">
+    <%= f.label :specialty %>
+    <%= f.text_field :specialty %>
+  </div>
+
+  <div class="field">
+    <%= f.label :academic_degree %>
+    <%= f.text_field :academic_degree %>
+  </div>
+
+  <div class="field">
+    <%= f.label :registration_date %>
+    <%= f.date_select :registration_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :position %>
+    <%= f.text_field :position %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

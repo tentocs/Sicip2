@@ -1,0 +1,32 @@
+<%= form_for(investigation_project) do |f| %>
+  <% if investigation_project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(investigation_project.errors.count, "error") %> prohibited this investigation_project from being saved:</h2>
+
+      <ul>
+      <% investigation_project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :investigator_id %>
+    <%= f.text_field :investigator_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :project_id %>
+    <%= f.text_field :project_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :investigator_type %>
+    <%= f.text_field :investigator_type %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

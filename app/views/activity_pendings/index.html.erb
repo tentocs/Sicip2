@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Activity Pendings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Report1</th>
+      <th>Report2</th>
+      <th>Report3</th>
+      <th>Final report</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activity_pendings.each do |activity_pending| %>
+      <tr>
+        <td><%= activity_pending.project %></td>
+        <td><%= activity_pending.report1 %></td>
+        <td><%= activity_pending.report2 %></td>
+        <td><%= activity_pending.report3 %></td>
+        <td><%= activity_pending.final_report %></td>
+        <td><%= link_to 'Show', activity_pending %></td>
+        <td><%= link_to 'Edit', edit_activity_pending_path(activity_pending) %></td>
+        <td><%= link_to 'Destroy', activity_pending, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity Pending', new_activity_pending_path %>

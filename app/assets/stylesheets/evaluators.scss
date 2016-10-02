@@ -1,0 +1,39 @@
+html,body{
+	margin: 0;
+	background-color: #eeeeee;
+	padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  
+}
+
+.barra-evaluador{
+	margin-top: -20px;
+	height: 45px;
+	background-color: #ffa726;
+}
+.letra-barra-evaluador{
+	font-size: 24px;
+	padding-top: 15px;
+	
+}
+.btn-registrar{
+	width: 150px;
+	height: 100px;
+	margin-top: 30px;
+
+}
+.btn-atras{
+	width: 150px;
+	height: 100px;
+	margin-top: 30px;
+}
+.main-evaluador{
+	margin-top: -15px;
+	flex: 1 0 auto;
+}
+.index-evaluador{
+	margin-right: 40px;
+	margin-left: 40px;
+}

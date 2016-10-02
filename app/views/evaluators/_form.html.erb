@@ -1,0 +1,93 @@
+<div class="container" style="margin-top: 50px;">
+<div class="row">
+
+  <%= form_for(evaluator) do |f| %>
+    <% if evaluator.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(evaluator.errors.count, "error") %> prohibited this evaluator from being saved:</h2>
+        <ul><% evaluator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+  <div class="field datepicker" style="margin-left: 700px; margin-bottom: 40px">
+    <%= f.label :Fecha_de_Registro %>
+    <%= f.date_select :registration_date %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Cedula, class:"black-text" %>
+    <%= f.text_field :ci %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Nombres, class:"black-text" %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Apellidos, class:"black-text" %>
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Direccion, class:"black-text" %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Email, class:"black-text" %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Telefono, class:"black-text" %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Departamento, class:"black-text" %>
+    <%= f.text_field :department %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Especialidad, class:"black-text" %>
+    <%= f.text_field :specialty %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Grado_Academico, class:"black-text" %>
+    <%= f.text_field :academic_degree %>
+  </div>
+
+  <div class="field col s6">
+    <%= f.label :Cargo, class:"black-text" %>
+    <%= f.text_field :position %>
+  </div>
+
+  <div class="container">
+  <div class="row center-xs">
+  <div class="actions col s6">
+    <a class="btn waves-effect waves-light btn-registrar grey"><%= f.submit  "Guardar" %> </a>
+  </div>
+  <div class="actions col s6">
+    <a class="btn waves-effect waves-light btn-atras grey"<%= link_to "Atras", evaluators_path %> </a>
+  </div>
+  </div>
+  </div>
+<% end %>
+</div>
+</div>
+
+<script>
+  $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 10, // Creates a dropdown of 15 years to control year
+        currentText: 'Hoy',
+        firstDay: 1,
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        closeText: 'Cerrar'
+    });
+</script>

@@ -1,0 +1,1 @@
+json.partial! "investigation_areas/investigation_area", investigation_area: @investigation_area

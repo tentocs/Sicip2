@@ -1,0 +1,2 @@
+json.extract! project, :id, :responsible, :co_respondible, :title, :category_id, :deanery, :investigation_area_id, :investigation_line, :research_unit_id, :duration, :academic_information, :administrative_information, :state_id, :approval_date, :registration_date, :created_at, :updated_at
+json.url project_url(project, format: :json)

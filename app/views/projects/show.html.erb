@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Responsible:</strong>
+  <%= @project.responsible %>
+</p>
+
+<p>
+  <strong>Co respondible:</strong>
+  <%= @project.co_respondible %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @project.category %>
+</p>
+
+<p>
+  <strong>Deanery:</strong>
+  <%= @project.deanery %>
+</p>
+
+<p>
+  <strong>Investigation area:</strong>
+  <%= @project.investigation_area %>
+</p>
+
+<p>
+  <strong>Investigation line:</strong>
+  <%= @project.investigation_line %>
+</p>
+
+<p>
+  <strong>Research unit:</strong>
+  <%= @project.research_unit %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @project.duration %>
+</p>
+
+<p>
+  <strong>Academic information:</strong>
+  <%= @project.academic_information %>
+</p>
+
+<p>
+  <strong>Administrative information:</strong>
+  <%= @project.administrative_information %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @project.state %>
+</p>
+
+<p>
+  <strong>Approval date:</strong>
+  <%= @project.approval_date %>
+</p>
+
+<p>
+  <strong>Registration date:</strong>
+  <%= @project.registration_date %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

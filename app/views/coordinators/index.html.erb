@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Coordinators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ci</th>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Department</th>
+      <th>Specialty</th>
+      <th>Academic degree</th>
+      <th>Registration date</th>
+      <th>Position</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coordinators.each do |coordinator| %>
+      <tr>
+        <td><%= coordinator.ci %></td>
+        <td><%= coordinator.name %></td>
+        <td><%= coordinator.lastname %></td>
+        <td><%= coordinator.address %></td>
+        <td><%= coordinator.email %></td>
+        <td><%= coordinator.phone %></td>
+        <td><%= coordinator.department %></td>
+        <td><%= coordinator.specialty %></td>
+        <td><%= coordinator.academic_degree %></td>
+        <td><%= coordinator.registration_date %></td>
+        <td><%= coordinator.position %></td>
+        <td><%= link_to 'Show', coordinator %></td>
+        <td><%= link_to 'Edit', edit_coordinator_path(coordinator) %></td>
+        <td><%= link_to 'Destroy', coordinator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coordinator', new_coordinator_path %>

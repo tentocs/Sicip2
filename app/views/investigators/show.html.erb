@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ci:</strong>
+  <%= @investigator.ci %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @investigator.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @investigator.lastname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @investigator.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @investigator.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @investigator.phone %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @investigator.department %>
+</p>
+
+<p>
+  <strong>Specialty:</strong>
+  <%= @investigator.specialty %>
+</p>
+
+<p>
+  <strong>Academic degree:</strong>
+  <%= @investigator.academic_degree %>
+</p>
+
+<p>
+  <strong>Registration date:</strong>
+  <%= @investigator.registration_date %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @investigator.position %>
+</p>
+
+<%= link_to 'Edit', edit_investigator_path(@investigator) %> |
+<%= link_to 'Back', investigators_path %>

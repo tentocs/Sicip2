@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  investigator: one
+  project: one
+  investigator_type: MyString
+
+two:
+  investigator: two
+  project: two
+  investigator_type: MyString

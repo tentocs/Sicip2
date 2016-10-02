@@ -1,0 +1,1 @@
+json.array! @research_units, partial: 'research_units/research_unit', as: :research_unit

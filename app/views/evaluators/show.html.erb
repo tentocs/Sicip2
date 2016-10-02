@@ -1,0 +1,98 @@
+<div class="main-evaluador">
+<div class="barra-evaluador">
+    <p class="letra-barra-evaluador">Perfil</p>
+ </div>
+
+ <div style="margin-left: 800px; margin-bottom: 40px">
+<p>
+  <strong>Fecha de Registro:</strong>
+  <%= @evaluator.registration_date %>
+</p>
+</div>
+ <div class="container">
+ <div class="row">
+
+
+<div class="col s6 red">
+ <p>
+  <strong>C&eacutedula:</strong>
+  <%= @evaluator.ci %>
+</p>
+</div>
+
+<div class="col s6 blue">
+<p>
+  <strong>Nombres:</strong>
+  <%= @evaluator.name %>
+</p>
+</div>
+
+<div class="col s6 grey">
+<p>
+  <strong>Apellidos:</strong>
+  <%= @evaluator.lastname %>
+</p>
+</div>
+
+<div class="col s6 red">
+<p>
+  <strong>Direcci&oacuten:</strong>
+  <%= @evaluator.address %>
+</p>
+</div>
+
+<div class="col s6 blue">
+<p>
+  <strong>Email:</strong>
+  <%= @evaluator.email %>
+</p>
+</div>
+
+<div class="col s6 grey">
+<p>
+  <strong>Tel&eacutefono:</strong>
+  <%= @evaluator.phone %>
+</p>
+</div>
+
+<div class="col s6 red">
+<p>
+  <strong>Departamento:</strong>
+  <%= @evaluator.department %>
+</p>
+</div>
+
+<div class="col s6 blue">
+<p>
+  <strong>Especialidad:</strong>
+  <%= @evaluator.specialty %>
+</p>
+</div>
+
+<div class="col s6 grey">
+<p>
+  <strong>Grado Acad&eacutemico:</strong>
+  <%= @evaluator.academic_degree %>
+</p>
+</div>
+
+<div class="col s6 red">
+<p >
+  <strong>Cargo:</strong>
+  <%= @evaluator.position %>
+</p>
+</div>
+
+ <div class="container">
+   <div class="row center-xs">
+   <div class="actions col s6">
+<a class="btn waves-effect waves-light btn-registrar grey"<%= link_to 'Editar', edit_evaluator_path(@evaluator) %> </a>
+</div>
+<div class="actions col s6">
+<a class="btn waves-effect waves-light btn-atras grey"<%= link_to 'Atras', evaluators_path %> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

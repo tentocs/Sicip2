@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ci:</strong>
+  <%= @coordinator.ci %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @coordinator.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @coordinator.lastname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @coordinator.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @coordinator.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @coordinator.phone %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @coordinator.department %>
+</p>
+
+<p>
+  <strong>Specialty:</strong>
+  <%= @coordinator.specialty %>
+</p>
+
+<p>
+  <strong>Academic degree:</strong>
+  <%= @coordinator.academic_degree %>
+</p>
+
+<p>
+  <strong>Registration date:</strong>
+  <%= @coordinator.registration_date %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @coordinator.position %>
+</p>
+
+<%= link_to 'Edit', edit_coordinator_path(@coordinator) %> |
+<%= link_to 'Back', coordinators_path %>

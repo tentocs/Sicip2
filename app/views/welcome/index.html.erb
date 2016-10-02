@@ -1,0 +1,187 @@
+<!-- link -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- /link -->
+
+<!-- ayuda -->
+<div class="fixed-action-btn horizontal" style="bottom: 20px; right: 24px;">
+    <a class="btn-floating btn-large orange modal-trigger" href="#ayuda">
+      <i class="large material-icons">live_help</i>
+    </a>
+</div>
+
+ <div id="ayuda" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+<!-- /ayuda -->
+
+<!-- logos -->
+<div class="logo">
+<ul class="no-list row center-xs">
+<li class="col-md">
+<img class="responsive-img" src="<%= asset_path 'ucla.png' %>">
+</li>
+<li class="col-md">
+<img class="responsive-img" src="<%= asset_path 'dcyt1.png' %>"></li>
+<li class="col-md">
+<img class="responsive-img" src="<%= asset_path 'logo4-4.png' %>"></li>
+</ul>
+</div>
+<!-- /logos -->
+
+<!-- menu -->
+<header id="menu" class="center-xs cont fila">
+	<div class="contenedor col-md smoothScroll">
+  		<i class="material-icons azul">home</i>
+		<p class="azul"><%= link_to "Inicio", root_path %></p>
+	</div>
+	<div class="contenedor col-md smoothScroll">
+		<i class="material-icons azul">supervisor_account</i>
+		<p class="azul"><%= link_to "Quienes Somos", :anchor => 'filosofia' %></p>
+	</div>
+	<div class="contenedor col-md smoothScroll">
+		<i class="material-icons azul">lock_outline</i><br>
+		<p class="azul"><a class="waves-effect waves-light modal-trigger" href="#modal1">Iniciar Sesi&oacuten</a></p>
+	</div>
+</header>
+<!-- /menu -->
+
+<!-- sesion -->
+ <div id="modal1" class="modal post">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+<!-- /sesion -->
+
+<!-- slider -->
+<div class="slider cont1">
+    <ul class="slides">
+      <li>
+        <img class="responsive-img" src="<%= asset_path '1.jpg' %>"> <!-- random image -->
+        <div class="caption center-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="<%= asset_path '13.jpg' %>"> <!-- random image -->
+        <div class="caption left-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="<%= asset_path '3.jpg' %>"> <!-- random image -->
+        <div class="caption right-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+         <img class="responsive-img" src="<%= asset_path '6.jpg' %>"> <!-- random image -->
+        <div class="caption center-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- /slider -->
+
+<!-- vision, mision, objetivo -->
+<div id=filosofia>
+<h4 class="filosofia margen">Coordinaci&oacuten de Investigaci&oacuten</h4>
+<div class="valign-wrapper center-xs">
+<div class="card wcard">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="responsive-img circle" src="<%= asset_path 'conocimiento.jpg' %>">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator  indigo-text text-darken-4">Visi&oacuten<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title indigo-text text-darken-4 azul">Visi&oacuten<i class="material-icons right">close</i></span>
+      <p class="texto">Promover la productividad cient&iacutefica y calidad t&eacutecnica, comprometida con el proceso de desarrollo de la regi&oacuten y del pa&iacutes, lo que nos conducen hacia una sociedad globalizada y competitiva, promoviendo as&iacute la generaci&oacuten, incorporaci&oacuten, difusi&oacuten de nuevos conocimientos y avances tecnol&oacutegicos, bajo una concepci&oacuten de pertinencia social.</p>
+    </div>
+</div>     
+       <div class="margen1">
+<div class="card wcard">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="responsive-img circle" src="<%= asset_path 'libro.jpg' %>">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator indigo-text text-darken-4">Misi&oacuten<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title indigo-text text-darken-4">Misi&oacuten<i class="material-icons right">close</i></span>
+      <p class="texto">La b&uacutesqueda de la verdad mediante la generaci&oacuten, aplicaci&oacuten y difusi&oacuten de conocimientos y la prestaci&oacuten de servicios en las &aacutereas cient&iacuteficas, human&iacutesticas y tecnol&oacutegicas, realizando funciones de investigaci&oacuten como Unidad rectora dentro de la UCLA, comprometida en la construcci&oacuten del desarrollo Regional, Nacional y Mundial.</p>
+    </div>
+</div>     
+</div>
+<div class="margen1">
+<div class="card wcard">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="responsive-img circle" src="<%= asset_path 'investigacion.jpg' %>">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator indigo-text text-darken-4">Objetivo<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title indigo-text text-darken-4">Objetivo<i class="material-icons right">close</i></span>
+      <p class="texto">-Servir de organismo de consulta y asesoramiento en la formulaci&oacuten de la Universidad y velar por su cumplimiento.<br>
+    -Estimular y coordinar la investigaci&oacuten en las &aacutereas Cient&iacuteficas, Human&iacutesticas y Tecnol&oacutegicas.<br>
+    -Propiciar el desarrollo de la infraestructura necesaria para la investigaci&oacuten.<br>
+    -Promover las investigaciones y estudios relativos al desarrollo de la regi&oacuten.<br>
+    -Vincular los programas de investigaci&oacuten cient&iacutefica, human&iacutestica y tecnol&oacutegica con los otros organismos de investigaci&oacuten a nivel nacional, regional o sectorial y con los de otras Universidades del pa&iacutes o del exterior.</p>
+    </div>
+  </div>     
+</div>
+
+</div>
+</div>
+<!-- /vision, mision, objetivo -->
+
+<!-- footer -->
+<footer class="page-footer indigo darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">SICIP</h5>
+                <p class="grey-text text-lighten-4">Coordinaci&oacuten de Investigaci&oacuten DCyT</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Redes Sociales</h5>
+                <ul id="tbsose">
+                  <li class="redes" data-alt="Facebook"><a class="icon facebook" href="URL Facebook" target='_blank'>Síguenos en Facebook</a></li>
+                  <li data-alt="Twitter"><a class="icon twitter" href="URL Twitter">Síguenos en Twitter</a></li>
+                  <li data-alt="Google+"><a class="icon googleplus" href="URL Google +" target='_blank'>Síguenos en Google+</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright indigo darken-3">
+            <div class="container center">
+           2016 Contento, Hern&aacutendez, Mart&iacutenez, Torres
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+            
+<!-- /footer -->
+
+ <script>
+	$('.slider').slider({full_width: true});
+	$('.modal-trigger').leanModal();
+  
+</script>
+

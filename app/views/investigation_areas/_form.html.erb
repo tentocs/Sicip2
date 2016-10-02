@@ -1,0 +1,25 @@
+<%= form_for(investigation_area) do |f| %>
+  <% if investigation_area.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(investigation_area.errors.count, "error") %> prohibited this investigation_area from being saved:</h2>
+
+      <ul>
+      <% investigation_area.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field left-align">
+    <%= f.label :descripción %>
+    <%= f.text_field :description %>
+  </div>
+  
+  <div class="actions">
+  <p class="container">
+  <a  type="button" class="btn btn-regresar waves-effect waves-light blue-grey lighten-3 indigo-text darken-2-text" style="top: 10px; font-size: 11px; text-rendering: 200px;">Atrás<i class="material-icons left">replay</i></a><button class="btn waves-effect waves-light btn-registrar blue-grey lighten-3 indigo-text darken-2-text" style="top: -5px; text-rendering: 200px; left: 360px; font-size:  11px" type= f.submit "Guardar" name="action">Guardar<i class="material-icons right">send</i>
+  </button>
+
+  </p></div>  
+<% end %>

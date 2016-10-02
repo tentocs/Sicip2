@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Investigators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ci</th>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Department</th>
+      <th>Specialty</th>
+      <th>Academic degree</th>
+      <th>Registration date</th>
+      <th>Position</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @investigators.each do |investigator| %>
+      <tr>
+        <td><%= investigator.ci %></td>
+        <td><%= investigator.name %></td>
+        <td><%= investigator.lastname %></td>
+        <td><%= investigator.address %></td>
+        <td><%= investigator.email %></td>
+        <td><%= investigator.phone %></td>
+        <td><%= investigator.department %></td>
+        <td><%= investigator.specialty %></td>
+        <td><%= investigator.academic_degree %></td>
+        <td><%= investigator.registration_date %></td>
+        <td><%= investigator.position %></td>
+        <td><%= link_to 'Show', investigator %></td>
+        <td><%= link_to 'Edit', edit_investigator_path(investigator) %></td>
+        <td><%= link_to 'Destroy', investigator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Investigator', new_investigator_path %>

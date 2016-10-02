@@ -1,0 +1,42 @@
+<%= form_for(activity_pending) do |f| %>
+  <% if activity_pending.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activity_pending.errors.count, "error") %> prohibited this activity_pending from being saved:</h2>
+
+      <ul>
+      <% activity_pending.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :project_id %>
+    <%= f.text_field :project_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :report1 %>
+    <%= f.date_select :report1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :report2 %>
+    <%= f.date_select :report2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :report3 %>
+    <%= f.date_select :report3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :final_report %>
+    <%= f.date_select :final_report %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,173 @@
+html{
+	margin: 0;
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+ 
+.logo1{
+
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.usuario{
+
+	margin-right: 40px;
+	margin-top: 10px;
+	border: none;
+	position: relative;
+	
+}
+.usuario:hover{
+background: transparent;
+}
+@media only screen and (max-width: 500px) {
+  .usuario {
+    width: 100%;
+  }
+}
+.perfil{
+	width: 300px;
+	height: 150px;
+	margin-right: 40px;
+	margin-top: -30px;
+}
+
+.menu-plegable {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menu-plegable a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.menu-plegable a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.menu-plegable .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#menu-sicip {
+    transition: margin-left .5s;
+    padding: 0px;
+    flex: 1 0 auto;   /*footer fijo*/
+}
+
+@media screen and (max-height: 450px) {
+  .menu-plegable {padding-top: 15px;}
+  .menu-plegable a {font-size: 18px;}
+}
+
+.margen-body{
+	margin-top: -25px;
+	height: 45px;
+	background-color: #ffa726;
+}
+.letra-barra{
+	font-size: 24px;
+	padding-top: 15px;
+}
+.card-1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 0px;
+
+}
+.img-1 {
+    border-radius: 5px 5px 0 0;
+}
+
+.container-1 {
+    padding: 2px 16px;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 260px;
+    height: 180px;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -220%;
+    left: 50%;
+    margin-left: -230px;
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 95px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.img-perfil{
+	margin-top: 10px;
+}
+.letra-perfil{
+	color: black;
+}
